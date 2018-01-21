@@ -1,0 +1,22 @@
+import os
+
+#rootPath = './'
+rootPath ='/home/li/Project/test/caffe_learning/mnist/data/'
+
+f = open(rootPath+'train.txt','w')
+for i in range(10):
+    path = rootPath + 'trainData/' + str(i)
+    lists = os.listdir(path)
+    for listfile in lists:
+        if listfile != 'Thumbs.db':
+            f.writelines([path,'/',listfile,' ',str(i),'\n'])
+f.close()
+
+f = open(rootPath+'test.txt','w')
+for i in range(10):
+    path = rootPath + 'testData/' + str(i)                                                                                                              
+    lists = os.listdir(path)
+    for listfile in lists:
+        if listfile != 'Thumbs.db':
+            f.writelines([path,'/',listfile,' ',str(i),'\n'])
+f.close()
