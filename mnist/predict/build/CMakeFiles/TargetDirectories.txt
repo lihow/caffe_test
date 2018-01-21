@@ -1,0 +1,1 @@
+/home/li/Project/test/caffe_learning/mnist/predict/build/CMakeFiles/predict.dir
