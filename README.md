@@ -1,6 +1,6 @@
 # Repository说明
 
-
+>关于caffe的一些所学都写在了本仓库的WiKi，可以先看Wiki 
 ## 文件夹1
 caffe中blob中的使用和调用blob数据结构的makefile 的编写
 ## 文件夹mnist
